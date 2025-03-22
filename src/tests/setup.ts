@@ -3,6 +3,7 @@
 
 import '@testing-library/jest-dom';
 import { vi } from 'vitest';
+import React from 'react';
 
 // Mock Next.js router
 vi.mock('next/router', () => ({
@@ -25,7 +26,7 @@ vi.mock('next/router', () => ({
 vi.mock('next/head', () => {
   return {
     __esModule: true,
-    default: ({ children }: { children: Array<React.ReactElement> }) => {
+    default: function HeadMock({ children }: { children: React.ReactNode }) {
       return <>{children}</>;
     },
   };
