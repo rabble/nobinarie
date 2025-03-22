@@ -18,3 +18,38 @@ body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
 }
+
+/* Accessibility Enhancements */
+
+/* Focus styles */
+*:focus-visible {
+  @apply outline-none ring-2 ring-primary-500 ring-offset-2 dark:ring-offset-gray-900;
+}
+
+/* Skip link styles */
+a[href="#main-content"] {
+  @apply transition-transform focus:translate-y-0;
+}
+
+/* Font size toggle */
+html.text-lg {
+  font-size: 112.5%; /* 18px if base is 16px */
+}
+
+/* Improve link underlines for better readability */
+.prose a {
+  @apply text-primary-600 dark:text-primary-400 no-underline border-b-2 border-primary-200 dark:border-primary-800 hover:border-primary-500 dark:hover:border-primary-500 transition-colors;
+}
+
+/* Better focus states for form elements */
+input:focus, textarea:focus, select:focus, button:focus {
+  @apply outline-none ring-2 ring-primary-500 ring-offset-2 dark:ring-offset-gray-900;
+}
+
+/* High contrast mode optimizations */
+@media (forced-colors: active) {
+  :root {
+    --foreground-rgb: canvastext;
+    --background-rgb: canvas;
+  }
+}

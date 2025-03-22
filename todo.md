@@ -1,7 +1,7 @@
 # Todo List for nobinarie.com
 
 ## Project Setup
-- [ ] Issue #0001: Initialize Next.js Project with TypeScript and TailwindCSS
+- [x] Issue #0001: Initialize Next.js Project with TypeScript and TailwindCSS
 
 ## Base Components
 - [ ] Issue #0002: Create Base Layout Components with Accessibility Features
