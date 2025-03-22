@@ -6,18 +6,24 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="bg-white dark:bg-gray-900" role="contentinfo">
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    <footer 
+      className="bg-gradient-to-r from-nonbinary-purple via-nonbinary-purple to-nonbinary-yellow dark:from-gray-900 dark:via-gray-900 dark:to-gray-800 text-gray-800 dark:text-white relative overflow-hidden" 
+      role="contentinfo"
+    >
+      {/* Rainbow border on bottom */}
+      <div className="h-1 w-full bg-rainbow-gradient absolute bottom-0 left-0 right-0 rotate-180"></div>
+
+      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 relative z-10">
         <nav className="grid grid-cols-1 md:grid-cols-3 gap-8" aria-label="Footer">
           <div>
-            <h2 className="text-sm font-semibold text-gray-500 dark:text-gray-300 tracking-wider uppercase" id="footer-recursos">
+            <h2 className="text-sm font-semibold text-gray-900 dark:text-rainbow-yellow tracking-wider uppercase" id="footer-recursos">
               Recursos
             </h2>
             <ul className="mt-4 space-y-4" aria-labelledby="footer-recursos">
               <li>
                 <Link 
                   href="/descargas" 
-                  className="text-base text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-primary-500 focus:text-primary-600 dark:focus:text-primary-400 rounded-md"
+                  className="text-base text-gray-700 dark:text-gray-300 hover:text-rainbow-blue dark:hover:text-rainbow-blue focus:outline-none focus:ring-2 focus:ring-rainbow-blue focus:text-rainbow-blue dark:focus:text-rainbow-blue rounded-md transition-colors"
                 >
                   Descargas
                 </Link>
@@ -25,7 +31,7 @@ export default function Footer() {
               <li>
                 <Link 
                   href="/tutoriales" 
-                  className="text-base text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-primary-500 focus:text-primary-600 dark:focus:text-primary-400 rounded-md"
+                  className="text-base text-gray-700 dark:text-gray-300 hover:text-rainbow-green dark:hover:text-rainbow-green focus:outline-none focus:ring-2 focus:ring-rainbow-green focus:text-rainbow-green dark:focus:text-rainbow-green rounded-md transition-colors"
                 >
                   Tutoriales
                 </Link>
@@ -33,7 +39,7 @@ export default function Footer() {
               <li>
                 <Link 
                   href="/recursos-externos" 
-                  className="text-base text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-primary-500 focus:text-primary-600 dark:focus:text-primary-400 rounded-md"
+                  className="text-base text-gray-700 dark:text-gray-300 hover:text-rainbow-purple dark:hover:text-rainbow-purple focus:outline-none focus:ring-2 focus:ring-rainbow-purple focus:text-rainbow-purple dark:focus:text-rainbow-purple rounded-md transition-colors"
                 >
                   Recursos externos
                 </Link>
@@ -41,14 +47,14 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h2 className="text-sm font-semibold text-gray-500 dark:text-gray-300 tracking-wider uppercase" id="footer-proyecto">
+            <h2 className="text-sm font-semibold text-gray-900 dark:text-rainbow-orange tracking-wider uppercase" id="footer-proyecto">
               Proyecto
             </h2>
             <ul className="mt-4 space-y-4" aria-labelledby="footer-proyecto">
               <li>
                 <Link 
                   href="/acerca-de" 
-                  className="text-base text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-primary-500 focus:text-primary-600 dark:focus:text-primary-400 rounded-md"
+                  className="text-base text-gray-700 dark:text-gray-300 hover:text-rainbow-orange dark:hover:text-rainbow-orange focus:outline-none focus:ring-2 focus:ring-rainbow-orange focus:text-rainbow-orange dark:focus:text-rainbow-orange rounded-md transition-colors"
                 >
                   Acerca de
                 </Link>
@@ -56,7 +62,7 @@ export default function Footer() {
               <li>
                 <Link 
                   href="/contribuir" 
-                  className="text-base text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-primary-500 focus:text-primary-600 dark:focus:text-primary-400 rounded-md"
+                  className="text-base text-gray-700 dark:text-gray-300 hover:text-rainbow-red dark:hover:text-rainbow-red focus:outline-none focus:ring-2 focus:ring-rainbow-red focus:text-rainbow-red dark:focus:text-rainbow-red rounded-md transition-colors"
                 >
                   Contribuir
                 </Link>
@@ -64,7 +70,7 @@ export default function Footer() {
               <li>
                 <Link 
                   href="/creditos" 
-                  className="text-base text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-primary-500 focus:text-primary-600 dark:focus:text-primary-400 rounded-md"
+                  className="text-base text-gray-700 dark:text-gray-300 hover:text-rainbow-pink dark:hover:text-rainbow-pink focus:outline-none focus:ring-2 focus:ring-rainbow-pink focus:text-rainbow-pink dark:focus:text-rainbow-pink rounded-md transition-colors"
                 >
                   Créditos
                 </Link>
@@ -72,14 +78,14 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h2 className="text-sm font-semibold text-gray-500 dark:text-gray-300 tracking-wider uppercase" id="footer-legal">
+            <h2 className="text-sm font-semibold text-gray-900 dark:text-rainbow-green tracking-wider uppercase" id="footer-legal">
               Legal
             </h2>
             <ul className="mt-4 space-y-4" aria-labelledby="footer-legal">
               <li>
                 <Link 
                   href="/privacidad" 
-                  className="text-base text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-primary-500 focus:text-primary-600 dark:focus:text-primary-400 rounded-md"
+                  className="text-base text-gray-700 dark:text-gray-300 hover:text-rainbow-purple dark:hover:text-rainbow-purple focus:outline-none focus:ring-2 focus:ring-rainbow-purple focus:text-rainbow-purple dark:focus:text-rainbow-purple rounded-md transition-colors"
                 >
                   Privacidad
                 </Link>
@@ -89,7 +95,7 @@ export default function Footer() {
                   href="https://github.com/rabble/nobinarie" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="text-base text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-primary-500 focus:text-primary-600 dark:focus:text-primary-400 rounded-md"
+                  className="text-base text-gray-700 dark:text-gray-300 hover:text-rainbow-blue dark:hover:text-rainbow-blue focus:outline-none focus:ring-2 focus:ring-rainbow-blue focus:text-rainbow-blue dark:focus:text-rainbow-blue rounded-md transition-colors"
                 >
                   GitHub
                 </a>
@@ -103,7 +109,7 @@ export default function Footer() {
               href="https://github.com/rabble/nobinarie" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="text-gray-400 hover:text-gray-500 dark:hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-primary-500 dark:focus:ring-offset-gray-900 rounded-md"
+              className="text-gray-500 hover:text-rainbow-gradient-hover dark:hover:text-rainbow-gradient-hover focus:outline-none focus:ring-2 focus:ring-rainbow-blue dark:focus:ring-offset-gray-900 rounded-md transition-colors"
               aria-label="GitHub repository"
             >
               <span className="sr-only">GitHub</span>
@@ -112,7 +118,7 @@ export default function Footer() {
               </svg>
             </a>
           </div>
-          <p className="mt-8 text-base text-gray-500 dark:text-gray-400 md:mt-0 md:order-1">
+          <p className="mt-8 text-base text-gray-700 dark:text-gray-300 md:mt-0 md:order-1">
             &copy; {new Date().getFullYear()} nobinarie.com. Todos los derechos reservados.
           </p>
         </div>

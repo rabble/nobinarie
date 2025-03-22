@@ -4,7 +4,7 @@
 - [x] Issue #0001: Initialize Next.js Project with TypeScript and TailwindCSS
 
 ## Base Components
-- [ ] Issue #0002: Create Base Layout Components with Accessibility Features
+- [x] Issue #0002: Create Base Layout Components with Accessibility Features
 
 ## Core Content
 - [ ] Issue #0003: Create Homepage with Clear Call-to-Action
