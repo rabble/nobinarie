@@ -1,148 +1,96 @@
-# Diccionario de Corrección Ortográfica Inclusivo
+# nobinarie.com
 
-Un conversor y sistema de corrección ortográfica que reconoce y valida el lenguaje inclusivo en español rioplatense.
+Un sitio dedicado a la promoción y distribución de diccionarios de corrección ortográfica inclusivos para el español, con foco en el uso de las terminaciones en "-e".
 
-## 📋 Descripción
+## 🎯 Propósito
 
-Este proyecto permite convertir diccionarios de corrección ortográfica estándar a versiones inclusivas que reconocen terminaciones en `-e`, `-x` y `@` como alternativas válidas a las formas tradicionales con marca de género en español. Está especialmente diseñado para el español rioplatense (Argentina y Uruguay), donde el uso del lenguaje inclusivo ha ganado popularidad.
+nobinarie.com es un sitio estático que promueve y distribuye diccionarios de corrección ortográfica inclusivos para el español. Sirve a activistas, educadores y aliades que quieren escribir en español no binario usando formas con "-e", no "x" o "@". También explica, justifica y educa sobre el uso del lenguaje inclusivo.
 
-El sistema procesa múltiples formatos de diccionarios (Hunspell, JSON, SQLite, XML, listas de palabras) y les añade el soporte para formas inclusivas con terminaciones alternativas, manteniendo la coherencia gramatical y respetando las particularidades lingüísticas de la región.
+## 🧩 Características principales
 
-## ✨ Características
+- Descarga de diccionarios de corrección ortográfica inclusivos
+- Tutoriales de instalación para diferentes plataformas
+- Recursos educativos sobre lenguaje inclusivo
+- Demostración interactiva de corrección ortográfica inclusiva
+- Recursos descargables e imprimibles
+- Totalmente accesible y adaptable a diferentes dispositivos
 
-- Conversión de diccionarios estándar a versiones inclusivas
-- Soporte para múltiples formatos (.dic/.aff, .txt, .json, .xml, .db)
-- Reglas de transformación para diferentes terminaciones de género
-- Manejo de excepciones y casos especiales
-- Soporte para artículos, pronombres y otras categorías gramaticales
-- Adaptado especialmente al español rioplatense
-- Preservación de palabras epicenas e invariables en género
+## 🏗️ Tecnologías
 
-## 🚀 Instalación
+- **Framework:** Next.js (modo de exportación estática)
+- **Estilos:** TailwindCSS
+- **Hosting:** Cloudflare Pages
+- **Contenido:** Markdown/MDX para facilitar la creación de contenido
+
+## 💻 Desarrollo
+
+### Requisitos previos
+
+- Node.js (versión 18 o superior)
+- npm o yarn
+
+### Configuración del entorno de desarrollo
 
 ```bash
 # Clonar el repositorio
 git clone https://github.com/rabble/nobinarie.git
-cd diccionario-inclusivo
+cd nobinarie
 
 # Instalar dependencias
-pip install -r requirements.txt
+npm install
+
+# Iniciar servidor de desarrollo
+npm run dev
 ```
 
-## 💻 Uso
+### Comandos disponibles
 
-### Conversor de diccionarios
+- **Desarrollo:** `npm run dev`
+- **Compilación:** `npm run build`
+- **Exportación estática:** `npm run export`
+- **Pruebas:** `npm test`
+- **Linting:** `npm run lint`
+- **Verificación de tipos:** `npm run typecheck`
+
+## 📋 Estructura del proyecto
+
+```
+/
+├── public/              # Archivos estáticos
+│   ├── downloads/       # Archivos para descargar
+│   │   └── v1.0.0/      # Versiones de diccionarios
+│   └── pdfs/            # Recursos imprimibles
+├── src/
+│   ├── components/      # Componentes React
+│   ├── pages/           # Páginas del sitio
+│   ├── styles/          # Estilos CSS
+│   └── lib/             # Funciones utilitarias
+├── docs/                # Documentación del proyecto
+└── tests/               # Pruebas automatizadas
+```
+
+## 🧪 Pruebas
+
+El proyecto incluye pruebas unitarias, de integración y de extremo a extremo:
 
 ```bash
-# Convertir un diccionario Hunspell
-python conversor_inclusivo.py diccionario_español.dic
+# Ejecutar todas las pruebas
+npm test
 
-# Especificar archivo de salida
-python conversor_inclusivo.py diccionario_español.dic -o diccionario_inclusivo.dic
+# Ejecutar pruebas unitarias
+npm run test:unit
 
-# Convertir una lista de palabras
-python conversor_inclusivo.py palabras_español.txt -o palabras_inclusivas.txt
+# Ejecutar pruebas de integración
+npm run test:integration
+
+# Ejecutar pruebas de extremo a extremo
+npm run test:e2e
 ```
-
-### Como librería en tu código
-
-```python
-from conversor_inclusivo import ConversorInclusivo
-
-# Crear una instancia del conversor
-conversor = ConversorInclusivo()
-
-# Procesar un archivo
-conversor.procesar_archivo("mi_diccionario.dic", "mi_diccionario_inclusivo.dic")
-
-# Generar una forma inclusiva de una palabra específica
-palabra_inclusiva = conversor.generar_forma_inclusiva("amigo")  # Devuelve "amigue"
-```
-
-### Integración con corrector ortográfico
-
-El diccionario generado puede utilizarse con aplicaciones que soporten Hunspell:
-
-- LibreOffice/OpenOffice: Coloca los archivos .dic y .aff en la carpeta de diccionarios
-- Navegadores: Importa los archivos mediante la configuración de idiomas
-- Aplicaciones basadas en SQLite: Utiliza directamente la base de datos generada
-
-## 🔧 Personalización
-
-Puedes personalizar el comportamiento del conversor modificando sus reglas y excepciones:
-
-```python
-conversor = ConversorInclusivo()
-
-# Añadir excepciones propias
-conversor.excepciones["palabra"] = "forma_inclusiva"
-
-# Agregar palabras que no deben modificarse
-conversor.no_modificar.add("termino_invariable")
-
-# Modificar reglas de transformación
-conversor.reglas.append((r'ion$', 'ione'))  # Para palabras terminadas en -ión
-```
-
-## 📚 Formatos soportados
-
-- **Hunspell** (.dic/.aff): Utilizado por LibreOffice, Firefox, Chrome
-- **Listas de palabras** (.txt, .wl): Archivos de texto con una palabra por línea
-- **JSON** (.json): Diccionarios estructurados para aplicaciones web
-- **XML** (.xml, .dict): Formatos XML como los usados por LanguageTool
-- **SQLite** (.db, .sqlite): Bases de datos para aplicaciones móviles y web
-
-## 🔍 Reglas de transformación
-
-El sistema aplica las siguientes transformaciones principales:
-
-| Terminación Estándar | Inclusivo (-e) | Ejemplo Original | Ejemplo Inclusivo |
-|----------------------|----------------|------------------|-------------------|
-| -o (masculino)       | -e             | amigo            | amigue            |
-| -a (femenino)        | -e             | amiga            | amigue            |
-| -os (plural masc.)   | -es            | amigos           | amigues           |
-| -as (plural fem.)    | -es            | amigas           | amigues           |
-| -or/-ora             | -ore           | profesor/a       | profesore         |
-| -dor/-dora           | -dore          | trabajador/a     | trabajadore       |
-
-Consulta la documentación para ver la lista completa de transformaciones.
-
-## 🔄 Limitaciones y consideraciones
-
-- El sistema no puede determinar automáticamente cuándo es apropiado usar lenguaje inclusivo según el contexto
-- Algunas transformaciones pueden generar ambigüedades con palabras existentes
-- El nivel de aceptación de las formas inclusivas varía según región y contexto social
-- Las palabras heterogéneas (ej: hombre/mujer) no tienen siempre una forma inclusiva única y aceptada
-
-## 📊 Estadísticas
-
-Durante la conversión, el sistema muestra estadísticas útiles:
-
-- Total de palabras procesadas
-- Palabras modificadas
-- Excepciones aplicadas
-- Palabras sin cambios
 
 ## 🤝 Contribuciones
 
-Las contribuciones son bienvenidas. Puedes ayudar de varias formas:
-
-- Mejorar las reglas de transformación
-- Añadir excepciones relevantes
-- Optimizar algoritmos
-- Ampliar la documentación
-- Reportar errores o comportamientos inesperados
+Las contribuciones son bienvenidas. Por favor, consulta nuestros [lineamientos de contribución](CONTRIBUTING.md) antes de enviar cambios.
 
 ## 📄 Licencia
 
-Este proyecto está licenciado bajo [MIT License](LICENSE).
-
-## ✒️ Autor
-
-- [@rabble](https://github.com/rabble) - Idea original y desarrollo
-
-## 📚 Referencias
-
-- [Guía de lenguaje inclusivo en español](https://link-a-guia.com)
-- [Hunspell Documentation](https://link-a-documentacion.com)
-- [Estudios sociolingüísticos del español rioplatense](https://link-a-estudios.com)
+Este proyecto está licenciado bajo la [Licencia MIT](LICENSE).

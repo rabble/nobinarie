@@ -1,0 +1,8 @@
+SET UTF-8
+TRY aeiourtnslcdmpbgvfhqjñzykxw-
+
+SFX S Y 1
+SFX S 0 s .
+
+PFX D Y 1
+PFX D 0 d .
