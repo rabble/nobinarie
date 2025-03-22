@@ -1,0 +1,12 @@
+{
+  "name": "Español Inclusivo",
+  "version": "1.0.0",
+  "description": "Diccionario con términos inclusivos en español",
+  "words": [
+    "amigue",
+    "todes",
+    "alumne",
+    "profesore",
+    "trabajadore"
+  ]
+}

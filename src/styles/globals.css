@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --rainbow-red: #ff595e;
+  --rainbow-orange: #ff924c;
+  --rainbow-yellow: #ffca3a;
+  --rainbow-green: #8ac926;
+  --rainbow-blue: #1982c4;
+  --rainbow-purple: #6a4c93;
+  --rainbow-pink: #e84a7f;
+  --nonbinary-yellow: #fff430;
+  --nonbinary-white: #ffffff;
+  --nonbinary-purple: #9c59d1;
+  --nonbinary-black: #000000;
+}
+
+@layer base {
+  body {
+    @apply text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-900;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold text-gray-900 dark:text-white;
+  }
+
+  a {
+    @apply transition-colors;
+  }
+}
+
+@layer components {
+  /* Decorative bubbles */
+  .bubble {
+    @apply absolute rounded-full blur-3xl opacity-30 dark:opacity-10;
+    background: linear-gradient(to right, var(--rainbow-blue), var(--rainbow-purple));
+  }
+
+  .bubble-1 {
+    @apply top-[5%] right-[10%] w-64 h-64;
+    animation: float 10s ease-in-out infinite;
+  }
+
+  .bubble-2 {
+    @apply -bottom-32 -left-32 w-96 h-96;
+    background: linear-gradient(to right, var(--rainbow-yellow), var(--rainbow-orange));
+    animation: float 14s ease-in-out infinite 2s;
+  }
+
+  .bubble-3 {
+    @apply top-[40%] -left-32 w-80 h-80;
+    background: linear-gradient(to right, var(--rainbow-green), var(--rainbow-blue));
+    animation: float 12s ease-in-out infinite 1s;
+  }
+
+  /* Buttons */
+  .btn-primary {
+    @apply inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-rainbow-gradient bg-300% hover:bg-left-animation focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rainbow-blue transition-all;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-rainbow-blue bg-rainbow-blue/10 hover:bg-rainbow-blue/20 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rainbow-blue transition-all;
+  }
+
+  /* Lead paragraph */
+  .lead {
+    @apply text-xl text-gray-700 dark:text-gray-300;
+  }
+}
+
+@layer utilities {
+  /* Rainbow gradient backgrounds */
+  .bg-rainbow-gradient {
+    background: linear-gradient(
+      to right,
+      var(--rainbow-red),
+      var(--rainbow-orange),
+      var(--rainbow-yellow),
+      var(--rainbow-green),
+      var(--rainbow-blue),
+      var(--rainbow-purple)
+    );
+  }
+
+  .bg-300\% {
+    background-size: 300% 100%;
+  }
+
+  .animate-rainbow-text {
+    animation: rainbow-text 8s linear infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 3s ease-in-out infinite;
+  }
+
+  .hover\:bg-left-animation:hover {
+    animation: bg-left 2s forwards;
+  }
+
+  /* Text gradient */
+  .text-rainbow-gradient-hover:hover {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(
+      to right,
+      var(--rainbow-red),
+      var(--rainbow-orange),
+      var(--rainbow-yellow),
+      var(--rainbow-green),
+      var(--rainbow-blue),
+      var(--rainbow-purple)
+    );
+  }
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.05);
+  }
+}
+
+@keyframes rainbow-text {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
+}
+
+@keyframes bg-left {
+  0% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
