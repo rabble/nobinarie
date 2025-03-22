@@ -19,13 +19,22 @@ describe('Dictionary System Integration', () => {
   beforeEach(() => {
     // Setup mock filesystem structure
     vi.mocked(fs.existsSync).mockImplementation((filePath) => {
-      if (filePath.includes('v1') || filePath.includes('v2')) return true;
+      if (filePath.includes('v1') || filePath.includes('v2') || 
+          filePath.includes('CHANGELOG') || filePath.includes('latest')) return true;
       return false;
     });
     
     vi.mocked(fs.readdirSync).mockImplementation((dir) => {
       if (dir.includes('dictionaries')) return ['v1', 'v2', 'latest'];
+      if (dir.includes('v1') || dir.includes('v2') || dir.includes('latest')) 
+        return ['README.md', 'es_inclusive.aff', 'es_inclusive.dic', 'es_inclusive.zip'];
       return [];
+    });
+
+    vi.mocked(fs.readFileSync).mockImplementation((path) => {
+      if (typeof path === 'string' && path.includes('CHANGELOG')) 
+        return Buffer.from('## [1.0.0]\nTest changelog content');
+      return Buffer.from('test content');
     });
   });
 

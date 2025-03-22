@@ -32,101 +32,57 @@ export default function Home() {
                 {/* Examples box in hero section */}
                 <div className="mt-6 bg-white/80 dark:bg-gray-900/80 shadow-xl rounded-xl overflow-hidden border border-rainbow-purple/20 max-w-4xl mx-auto backdrop-blur-sm">
                   <div className="p-6">
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4 text-center">Ejemplos de lenguaje inclusivo</h3>
-                    <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4 text-left">Ejemplos de lenguaje inclusivo</h3>
+                    <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                       <div className="flex flex-col">
-                        <h4 className="text-lg font-medium text-gray-900 dark:text-white mb-3 text-center">Español tradicional</h4>
-                        <table className="w-full">
-                          <tbody>
-                            <tr>
-                              <td width="30" className="align-top text-center">
-                                <span className="text-red-500 font-bold">✗</span>
-                              </td>
-                              <td className="text-gray-700 dark:text-gray-300 pb-1.5">
-                                Todos los estudiantes están invitados
-                              </td>
-                            </tr>
-                            <tr>
-                              <td width="30" className="align-top text-center">
-                                <span className="text-red-500 font-bold">✗</span>
-                              </td>
-                              <td className="text-gray-700 dark:text-gray-300 pb-1.5">
-                                Los niños juegan en el parque
-                              </td>
-                            </tr>
-                            <tr>
-                              <td width="30" className="align-top text-center">
-                                <span className="text-red-500 font-bold">✗</span>
-                              </td>
-                              <td className="text-gray-700 dark:text-gray-300 pb-1.5">
-                                Hola a todos
-                              </td>
-                            </tr>
-                            <tr>
-                              <td width="30" className="align-top text-center">
-                                <span className="text-red-500 font-bold">✗</span>
-                              </td>
-                              <td className="text-gray-700 dark:text-gray-300 pb-1.5">
-                                Estamos muy emocionados
-                              </td>
-                            </tr>
-                            <tr>
-                              <td width="30" className="align-top text-center">
-                                <span className="text-red-500 font-bold">✗</span>
-                              </td>
-                              <td className="text-gray-700 dark:text-gray-300">
-                                Mis amigos y vecinos
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
+                        <h4 className="text-lg font-medium text-gray-900 dark:text-white mb-3 text-left">Español tradicional</h4>
+                        <ul className="space-y-2">
+                          <li className="flex items-start">
+                            <span className="text-red-500 font-bold mr-2">✗</span>
+                            <span className="text-gray-700 dark:text-gray-300">Todos los estudiantes están invitados</span>
+                          </li>
+                          <li className="flex items-start">
+                            <span className="text-red-500 font-bold mr-2">✗</span>
+                            <span className="text-gray-700 dark:text-gray-300">Los niños juegan en el parque</span>
+                          </li>
+                          <li className="flex items-start">
+                            <span className="text-red-500 font-bold mr-2">✗</span>
+                            <span className="text-gray-700 dark:text-gray-300">Hola a todos</span>
+                          </li>
+                          <li className="flex items-start">
+                            <span className="text-red-500 font-bold mr-2">✗</span>
+                            <span className="text-gray-700 dark:text-gray-300">Estamos muy emocionados</span>
+                          </li>
+                          <li className="flex items-start">
+                            <span className="text-red-500 font-bold mr-2">✗</span>
+                            <span className="text-gray-700 dark:text-gray-300">Mis amigos y vecinos</span>
+                          </li>
+                        </ul>
                       </div>
                       <div className="flex flex-col">
-                        <h4 className="text-lg font-medium text-rainbow-gradient bg-300% bg-clip-text text-transparent mb-3 text-center">Español inclusivo</h4>
-                        <table className="w-full">
-                          <tbody>
-                            <tr>
-                              <td width="30" className="align-top text-center">
-                                <span className="text-green-500 font-bold">✓</span>
-                              </td>
-                              <td className="text-gray-700 dark:text-gray-300 pb-1.5">
-                                <span className="text-rainbow-blue">Todes les estudiantes</span> están invitades
-                              </td>
-                            </tr>
-                            <tr>
-                              <td width="30" className="align-top text-center">
-                                <span className="text-green-500 font-bold">✓</span>
-                              </td>
-                              <td className="text-gray-700 dark:text-gray-300 pb-1.5">
-                                <span className="text-rainbow-orange">Les niñes</span> juegan en el parque
-                              </td>
-                            </tr>
-                            <tr>
-                              <td width="30" className="align-top text-center">
-                                <span className="text-green-500 font-bold">✓</span>
-                              </td>
-                              <td className="text-gray-700 dark:text-gray-300 pb-1.5">
-                                Hola a <span className="text-rainbow-purple">todes</span>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td width="30" className="align-top text-center">
-                                <span className="text-green-500 font-bold">✓</span>
-                              </td>
-                              <td className="text-gray-700 dark:text-gray-300 pb-1.5">
-                                Estamos muy <span className="text-rainbow-green">emocionades</span>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td width="30" className="align-top text-center">
-                                <span className="text-green-500 font-bold">✓</span>
-                              </td>
-                              <td className="text-gray-700 dark:text-gray-300">
-                                Mis <span className="text-rainbow-pink">amigues</span> y <span className="text-rainbow-blue">vecines</span>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
+                        <h4 className="text-lg font-medium text-rainbow-gradient bg-300% bg-clip-text text-transparent mb-3 text-left">Español inclusivo</h4>
+                        <ul className="space-y-2">
+                          <li className="flex items-start">
+                            <span className="text-green-500 font-bold mr-2">✓</span>
+                            <span className="text-gray-700 dark:text-gray-300"><span className="text-rainbow-blue">Todes les estudiantes</span> están invitades</span>
+                          </li>
+                          <li className="flex items-start">
+                            <span className="text-green-500 font-bold mr-2">✓</span>
+                            <span className="text-gray-700 dark:text-gray-300"><span className="text-rainbow-orange">Les niñes</span> juegan en el parque</span>
+                          </li>
+                          <li className="flex items-start">
+                            <span className="text-green-500 font-bold mr-2">✓</span>
+                            <span className="text-gray-700 dark:text-gray-300">Hola a <span className="text-rainbow-purple">todes</span></span>
+                          </li>
+                          <li className="flex items-start">
+                            <span className="text-green-500 font-bold mr-2">✓</span>
+                            <span className="text-gray-700 dark:text-gray-300">Estamos muy <span className="text-rainbow-green">emocionades</span></span>
+                          </li>
+                          <li className="flex items-start">
+                            <span className="text-green-500 font-bold mr-2">✓</span>
+                            <span className="text-gray-700 dark:text-gray-300">Mis <span className="text-rainbow-pink">amigues</span> y <span className="text-rainbow-blue">vecines</span></span>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
