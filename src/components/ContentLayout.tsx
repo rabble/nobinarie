@@ -18,6 +18,26 @@ interface ContentLayoutProps {
   lastUpdated?: string;
 }
 
+/**
+ * Content page layout component with title, breadcrumbs, and consistent styling
+ * 
+ * @param {ReactNode} children - The content to be rendered inside the layout
+ * @param {string} title - The title of the content page
+ * @param {string} description - Optional description/subtitle to display below the title
+ * @param {Breadcrumb[]} breadcrumbs - Optional array of breadcrumb items for navigation
+ * @param {string} lastUpdated - Optional string indicating when content was last updated
+ * @returns {JSX.Element} Content layout with breadcrumbs, title section, and styled content area
+ * 
+ * @example
+ * <ContentLayout 
+ *   title="¿Qué es el lenguaje inclusivo?" 
+ *   description="Una introducción a los conceptos básicos"
+ *   breadcrumbs={[{ label: 'Recursos', href: '/recursos' }]}
+ *   lastUpdated="25 de enero de 2025"
+ * >
+ *   <p>Contenido de la página...</p>
+ * </ContentLayout>
+ */
 export default function ContentLayout({
   children,
   title,

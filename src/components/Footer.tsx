@@ -4,6 +4,11 @@
 import React from 'react';
 import Link from 'next/link';
 
+/**
+ * Footer component displaying copyright info, links, and additional resources
+ * 
+ * @returns {JSX.Element} Site footer with links and copyright information
+ */
 export default function Footer() {
   return (
     <footer 

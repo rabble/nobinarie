@@ -13,6 +13,19 @@ interface LayoutProps {
   description?: string;
 }
 
+/**
+ * Main layout component for all pages
+ * 
+ * @param {ReactNode} children - The content to be rendered inside the layout
+ * @param {string} pageTitle - The title to be displayed in the browser tab (will be prefixed with site name)
+ * @param {string} description - Meta description for SEO (falls back to site default if not provided)
+ * @returns {JSX.Element} Layout component with header, main content area, and footer
+ * 
+ * @example
+ * <Layout pageTitle="Página de inicio" description="Una descripción de la página principal">
+ *   <div>Contenido de la página</div>
+ * </Layout>
+ */
 export default function Layout({ 
   children, 
   pageTitle, 

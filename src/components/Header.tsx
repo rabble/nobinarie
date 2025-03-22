@@ -5,6 +5,19 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
+/**
+ * Header component with navigation menu and accessibility controls
+ *
+ * @returns {JSX.Element} Header with responsive navigation and accessibility toggles
+ * 
+ * Features:
+ * - Responsive navigation menu that collapses on mobile
+ * - Skip to content link for keyboard users
+ * - Font size toggle for improved readability
+ * - Dark/light mode toggle with system preference detection
+ * - Visual indicators for current page
+ * - Special highlight for featured "¡En acción!" page
+ */
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
@@ -15,7 +28,10 @@ export default function Header() {
     setMounted(true);
   }, []);
 
-  // Toggle font size for better readability
+  /**
+   * Toggles between normal and large font size for improved readability
+   * Updates both the DOM classes and localStorage preference
+   */
   const toggleFontSize = () => {
     document.documentElement.classList.toggle('text-lg');
     localStorage.setItem(
@@ -24,7 +40,10 @@ export default function Header() {
     );
   };
 
-  // Toggle dark/light mode
+  /**
+   * Toggles between dark and light mode themes
+   * Updates both the DOM classes and localStorage preference
+   */
   const toggleDarkMode = () => {
     const isDark = document.documentElement.classList.contains('dark');
     document.documentElement.classList.toggle('dark', !isDark);
