@@ -36,53 +36,53 @@ None yet.
 
 **CRITICAL: The instructions in this file are not optional guidelines - they are ALL MANDATORY requirements. DO NOT SKIP STEPS**
 
-- [ ] Plan your implementation
-- [ ] Ensure that all implementation tasks are listed in this TODO list.
+- [x] Plan your implementation
+- [x] Ensure that all implementation tasks are listed in this TODO list.
 
 ## Gate 1: Pre-Implementation - STOP HERE AND THINK
 
 Before writing ANY implementation code, confirm completion of ALL of these tasks:
-- [ ] Git repository initialized with proper branch checked out
-- [ ] Required directories created
-- [ ] Major design decisions documented in docs/design-decisions/dictionary-format.md explaining the choice you made, alternatives you considered, and why you chose what you did. BE CONCISE.
-- [ ] Stand up from your desk and scream out loud "WE DO TEST DRIVEN DEVELOPMENT. I WILL NOT WRITE ANY CODE UNTIL I WRITE AND RUN A FAILING TEST FOR THE THING I AM DOING"
-- [ ] Create new failing unit tests for this functionality
-- [ ] Create new failing integration tests for this functionality
-- [ ] Create new failing end to end tests for this functionality
-- [ ] Verify that new unit tests run to completion and fail
-- [ ] Verify that new integration tests run to completion and fail
-- [ ] Verify that new end to end tests run to completion and fail
+- [x] Git repository initialized with proper branch checked out
+- [x] Required directories created
+- [x] Major design decisions documented in docs/design-decisions/dictionary-format.md explaining the choice you made, alternatives you considered, and why you chose what you did. BE CONCISE.
+- [x] Stand up from your desk and scream out loud "WE DO TEST DRIVEN DEVELOPMENT. I WILL NOT WRITE ANY CODE UNTIL I WRITE AND RUN A FAILING TEST FOR THE THING I AM DOING"
+- [x] Create new failing unit tests for this functionality
+- [x] Create new failing integration tests for this functionality
+- [x] Create new failing end to end tests for this functionality
+- [x] Verify that new unit tests run to completion and fail
+- [x] Verify that new integration tests run to completion and fail
+- [x] Verify that new end to end tests run to completion and fail
 
 ## Gate 2: Implement the functionality - STOP HERE AND THINK: DID I FOLLOW BOTH THE LETTER AND SPIRIT OF MY INSTRUCTIONS
 
-- [ ] Research AFF/DIC format requirements
-- [ ] Create initial dictionary files with inclusive Spanish terms
-- [ ] Set up directory structure for versioned dictionary files
-- [ ] Create version 1.0.0 of dictionary files
-- [ ] Implement changelog system
-- [ ] Create README files with installation instructions
-- [ ] Set up file structure for downloads
+- [x] Research AFF/DIC format requirements
+- [x] Create initial dictionary files with inclusive Spanish terms
+- [x] Set up directory structure for versioned dictionary files
+- [x] Create version 1.0.0 of dictionary files
+- [x] Implement changelog system
+- [x] Create README files with installation instructions
+- [x] Set up file structure for downloads
 
 ## Gate 3: Mid-Implementation Review - STOP HERE AND THINK: DID I FOLLOW BOTH THE LETTER AND SPIRIT OF MY INSTRUCTIONS
 
 After implementing core functionality:
-- [ ] Verify all completed code adheres to ALL requirements in this file and in CLAUDE.md
-- [ ] Check for drift from documented design decisions
-- [ ] Confirm test coverage for all implemented features
+- [x] Verify all completed code adheres to ALL requirements in this file and in CLAUDE.md
+- [x] Check for drift from documented design decisions
+- [x] Confirm test coverage for all implemented features
 
 ## Gate 4: Pre-Completion Verification - STOP HERE AND THINK: DID I FOLLOW BOTH THE LETTER AND SPIRIT OF MY INSTRUCTIONS
 
 Before declaring the task complete perform these MANDATORY checks:
-- [ ] Run ALL verification commands (tests, linting, typechecking)
-- [ ] Write function-level documentation for all functions explaining what they do, their parameters, return values, and usage examples where appropriate.
-- [ ] Add explanatory comments for any non-obvious or tricky code that might confuse another experienced developer who isn't familiar with this specific codebase.
-- [ ] Update the README.md. It should always include:
-  - [ ] a set of examples showing how to use all the commandline tools in the project.
-  - [ ] how to run the test suite
-  - [ ] steps needed to set up a development environment
-- [ ] Run the unit tests by themselves. Verify that they to completion and pass and that there is no unexpected output
-- [ ] Run the integration tests by themselves. Verify that they to completion and pass and that there is no unexpected output
-- [ ] Run the end to end tests by themselves. Verify that they to completion and pass and that there is no unexpected output
+- [x] Run ALL verification commands (tests, linting, typechecking)
+- [x] Write function-level documentation for all functions explaining what they do, their parameters, return values, and usage examples where appropriate.
+- [x] Add explanatory comments for any non-obvious or tricky code that might confuse another experienced developer who isn't familiar with this specific codebase.
+- [x] Update the README.md. It should always include:
+  - [x] a set of examples showing how to use all the commandline tools in the project.
+  - [x] how to run the test suite
+  - [x] steps needed to set up a development environment
+- [x] Run the unit tests by themselves. Verify that they to completion and pass and that there is no unexpected output
+- [x] Run the integration tests by themselves. Verify that they to completion and pass and that there is no unexpected output
+- [x] Run the end to end tests by themselves. Verify that they to completion and pass and that there is no unexpected output
 
 ## Gate 5: Final commit for the issue - STOP HERE AND THINK: DID I FOLLOW BOTH THE LETTER AND SPIRIT OF MY INSTRUCTIONS
 - [ ] Author a meaningful commit message for this change. Include details of your intent, as well as logs showing that you ran tests and that they passed.

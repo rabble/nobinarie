@@ -7,7 +7,7 @@
 - [x] Issue #0002: Create Base Layout Components with Accessibility Features
 
 ## Core Content
-- [ ] Issue #0003: Create Homepage with Clear Call-to-Action
+- [x] Issue #0003: Create Homepage with Clear Call-to-Action
 - [ ] Issue #0004: Implement Core Content Pages
 
 ## Dictionary Implementation

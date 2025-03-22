@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .border-rainbow-gradient {
+    border-image: linear-gradient(to right, #FF5252, #FF9500, #FFD600, #00C853, #2979FF, #AA00FF) 1;
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-rgb: 255, 255, 255;

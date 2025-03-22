@@ -76,6 +76,16 @@ export default function Header() {
                 Qué es lengua inclusiva
               </Link>
               <Link 
+                href="/lenguaje-inclusivo-en-accion" 
+                className={`${
+                  router.pathname === '/lenguaje-inclusivo-en-accion' 
+                    ? 'border-rainbow-red text-gray-900 dark:text-white font-bold' 
+                    : 'border-transparent text-gray-800 dark:text-white hover:text-rainbow-red dark:hover:text-rainbow-red hover:border-rainbow-red'
+                } inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors animate-pulse-slow`}
+              >
+                ¡En acción!
+              </Link>
+              <Link 
                 href="/por-que-usamos-la-e" 
                 className={`${
                   router.pathname === '/por-que-usamos-la-e' 
@@ -190,6 +200,23 @@ export default function Header() {
             onClick={() => setIsMenuOpen(false)}
           >
             Qué es lengua inclusiva
+          </Link>
+          <Link
+            href="/lenguaje-inclusivo-en-accion"
+            className={`${
+              router.pathname === '/lenguaje-inclusivo-en-accion'
+                ? 'bg-nonbinary-yellow/20 border-rainbow-red text-rainbow-red dark:text-rainbow-red font-bold'
+                : 'border-transparent text-gray-800 dark:text-white hover:bg-nonbinary-yellow/10 dark:hover:bg-white/5 hover:border-rainbow-red hover:text-rainbow-red dark:hover:text-rainbow-red'
+            } block pl-3 pr-4 py-2 border-l-4 text-base font-medium transition-colors relative`}
+            onClick={() => setIsMenuOpen(false)}
+          >
+            <span className="relative inline-block">
+              ¡En acción!
+              <span className="absolute -top-1 -right-4 flex h-3 w-3">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-rainbow-red opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-rainbow-red"></span>
+              </span>
+            </span>
           </Link>
           <Link
             href="/por-que-usamos-la-e"

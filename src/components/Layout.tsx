@@ -63,7 +63,7 @@ export default function Layout({
         
         {/* Accessibility Meta Tags */}
         <meta name="format-detection" content="telephone=no" />
-        <html lang="es" />
+        <meta httpEquiv="content-language" content="es" />
       </Head>
       
       <Header />

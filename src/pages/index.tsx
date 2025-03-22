@@ -24,11 +24,126 @@ export default function Home() {
                   <span className="block xl:inline">¡Vos podés escribir</span>{' '}
                   <span className="block rainbow-text bg-300% xl:inline">no binarie ahora!</span>
                 </h1>
-                <p className="mt-3 text-base text-gray-500 dark:text-gray-300 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                <p className="mt-3 text-base text-gray-500 dark:text-gray-300 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl mx-auto text-center">
                   Descargá y usá nuestros diccionarios de corrección ortográfica inclusivos para escribir
                   en español con terminaciones en -e de forma natural y sin errores.
                 </p>
-                <div className="mt-5 sm:mt-8 sm:flex sm:justify-center">
+                
+                {/* Examples box in hero section */}
+                <div className="mt-6 bg-white/80 dark:bg-gray-900/80 shadow-xl rounded-xl overflow-hidden border border-rainbow-purple/20 max-w-4xl mx-auto backdrop-blur-sm">
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4 text-center">Ejemplos de lenguaje inclusivo</h3>
+                    <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+                      <div className="flex flex-col">
+                        <h4 className="text-lg font-medium text-gray-900 dark:text-white mb-3 text-center">Español tradicional</h4>
+                        <table className="w-full">
+                          <tbody>
+                            <tr>
+                              <td width="30" className="align-top text-center">
+                                <span className="text-red-500 font-bold">✗</span>
+                              </td>
+                              <td className="text-gray-700 dark:text-gray-300 pb-1.5">
+                                Todos los estudiantes están invitados
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="30" className="align-top text-center">
+                                <span className="text-red-500 font-bold">✗</span>
+                              </td>
+                              <td className="text-gray-700 dark:text-gray-300 pb-1.5">
+                                Los niños juegan en el parque
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="30" className="align-top text-center">
+                                <span className="text-red-500 font-bold">✗</span>
+                              </td>
+                              <td className="text-gray-700 dark:text-gray-300 pb-1.5">
+                                Hola a todos
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="30" className="align-top text-center">
+                                <span className="text-red-500 font-bold">✗</span>
+                              </td>
+                              <td className="text-gray-700 dark:text-gray-300 pb-1.5">
+                                Estamos muy emocionados
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="30" className="align-top text-center">
+                                <span className="text-red-500 font-bold">✗</span>
+                              </td>
+                              <td className="text-gray-700 dark:text-gray-300">
+                                Mis amigos y vecinos
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div className="flex flex-col">
+                        <h4 className="text-lg font-medium text-rainbow-gradient bg-300% bg-clip-text text-transparent mb-3 text-center">Español inclusivo</h4>
+                        <table className="w-full">
+                          <tbody>
+                            <tr>
+                              <td width="30" className="align-top text-center">
+                                <span className="text-green-500 font-bold">✓</span>
+                              </td>
+                              <td className="text-gray-700 dark:text-gray-300 pb-1.5">
+                                <span className="text-rainbow-blue">Todes les estudiantes</span> están invitades
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="30" className="align-top text-center">
+                                <span className="text-green-500 font-bold">✓</span>
+                              </td>
+                              <td className="text-gray-700 dark:text-gray-300 pb-1.5">
+                                <span className="text-rainbow-orange">Les niñes</span> juegan en el parque
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="30" className="align-top text-center">
+                                <span className="text-green-500 font-bold">✓</span>
+                              </td>
+                              <td className="text-gray-700 dark:text-gray-300 pb-1.5">
+                                Hola a <span className="text-rainbow-purple">todes</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="30" className="align-top text-center">
+                                <span className="text-green-500 font-bold">✓</span>
+                              </td>
+                              <td className="text-gray-700 dark:text-gray-300 pb-1.5">
+                                Estamos muy <span className="text-rainbow-green">emocionades</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="30" className="align-top text-center">
+                                <span className="text-green-500 font-bold">✓</span>
+                              </td>
+                              <td className="text-gray-700 dark:text-gray-300">
+                                Mis <span className="text-rainbow-pink">amigues</span> y <span className="text-rainbow-blue">vecines</span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bg-gray-50 dark:bg-gray-800 px-4 py-3 border-t border-gray-200 dark:border-gray-700 text-center">
+                    <Link
+                      href="/lenguaje-inclusivo-en-accion"
+                      className="inline-flex items-center text-rainbow-red dark:text-rainbow-red font-medium hover:underline transition duration-150 text-sm"
+                    >
+                      <span>Ver más ejemplos y casos de uso</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </Link>
+                  </div>
+                </div>
+                
+                <div className="mt-6 sm:mt-8 sm:flex sm:justify-center">
                   <div className="rounded-md shadow">
                     <Link href="/descargas" className="btn-primary">
                       Descargar ahora 🌈
@@ -136,67 +251,84 @@ export default function Home() {
       <section className="py-12 bg-gray-50 dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-base font-semibold text-rainbow-orange uppercase tracking-wide">Ejemplos</h2>
+            <h2 className="text-base font-semibold text-rainbow-red uppercase tracking-wide">Destacado</h2>
             <p className="mt-2 text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl">
-              Lenguaje inclusivo en acción
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-rainbow-red to-rainbow-purple">Lenguaje inclusivo en acción</span>
             </p>
             <p className="mt-4 max-w-2xl text-xl text-gray-500 dark:text-gray-300 mx-auto">
-              Mirá algunos ejemplos de cómo funciona el lenguaje inclusivo con terminaciones en -e.
+              Descubrí cómo el lenguaje inclusivo ya está transformando la comunicación en el mundo real
             </p>
           </div>
           
-          <div className="mt-16 bg-white dark:bg-gray-900 shadow-xl rounded-2xl overflow-hidden">
-            <div className="px-4 py-5 sm:p-6">
-              <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-                <div>
-                  <h3 className="text-lg font-medium text-gray-900 dark:text-white">Español tradicional</h3>
-                  <ul className="mt-4 space-y-3 text-gray-700 dark:text-gray-300">
-                    <li>
-                      <span className="text-red-500 mr-2">✗</span> 
-                      Todos los estudiantes están invitados
-                    </li>
-                    <li>
-                      <span className="text-red-500 mr-2">✗</span> 
-                      Los niños juegan en el parque
-                    </li>
-                    <li>
-                      <span className="text-red-500 mr-2">✗</span> 
-                      Hola a todos
-                    </li>
-                    <li>
-                      <span className="text-red-500 mr-2">✗</span> 
-                      Estamos muy emocionados
-                    </li>
-                    <li>
-                      <span className="text-red-500 mr-2">✗</span> 
-                      Mis amigos y vecinos
-                    </li>
-                  </ul>
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Card 1 */}
+            <div className="bg-white dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="h-3 bg-rainbow-red"></div>
+              <div className="p-6">
+                <div className="flex items-center mb-3">
+                  <div className="w-10 h-10 bg-rainbow-red/10 dark:bg-rainbow-red/20 rounded-full flex items-center justify-center mr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-rainbow-red" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Organizaciones</h3>
                 </div>
-                <div>
-                  <h3 className="text-lg font-medium text-rainbow-gradient bg-300% bg-clip-text text-transparent">Español inclusivo</h3>
-                  <ul className="mt-4 space-y-3 text-gray-700 dark:text-gray-300">
-                    <li>
-                      <span className="text-green-500 mr-2">✓</span> 
-                      <span className="text-rainbow-blue">Todes les estudiantes</span> están invitades
-                    </li>
-                    <li>
-                      <span className="text-green-500 mr-2">✓</span> 
-                      <span className="text-rainbow-orange">Les niñes</span> juegan en el parque
-                    </li>
-                    <li>
-                      <span className="text-green-500 mr-2">✓</span> 
-                      Hola a <span className="text-rainbow-purple">todes</span>
-                    </li>
-                    <li>
-                      <span className="text-green-500 mr-2">✓</span> 
-                      Estamos muy <span className="text-rainbow-green">emocionades</span>
-                    </li>
-                    <li>
-                      <span className="text-green-500 mr-2">✓</span> 
-                      Mis <span className="text-rainbow-pink">amigues</span> y <span className="text-rainbow-blue">vecines</span>
-                    </li>
-                  </ul>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  Más de 20 universidades y organizaciones han adoptado oficialmente el lenguaje inclusivo
+                </p>
+                <div className="text-rainbow-red font-medium flex items-center">
+                  <Link href="/lenguaje-inclusivo-en-accion#organizaciones" className="hover:underline">Ver ejemplos</Link>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            
+            {/* Card 2 */}
+            <div className="bg-white dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="h-3 bg-rainbow-purple"></div>
+              <div className="p-6">
+                <div className="flex items-center mb-3">
+                  <div className="w-10 h-10 bg-rainbow-purple/10 dark:bg-rainbow-purple/20 rounded-full flex items-center justify-center mr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-rainbow-purple" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Historias de éxito</h3>
+                </div>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  Testimonios de personas y organizaciones que están usando el lenguaje inclusivo
+                </p>
+                <div className="text-rainbow-purple font-medium flex items-center">
+                  <Link href="/lenguaje-inclusivo-en-accion#testimonios" className="hover:underline">Leer testimonios</Link>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            
+            {/* Card 3 */}
+            <div className="bg-white dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="h-3 bg-rainbow-blue"></div>
+              <div className="p-6">
+                <div className="flex items-center mb-3">
+                  <div className="w-10 h-10 bg-rainbow-blue/10 dark:bg-rainbow-blue/20 rounded-full flex items-center justify-center mr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-rainbow-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Estrategias prácticas</h3>
+                </div>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  Consejos y métodos probados para implementar el lenguaje inclusivo con éxito
+                </p>
+                <div className="text-rainbow-blue font-medium flex items-center">
+                  <Link href="/lenguaje-inclusivo-en-accion#estrategias" className="hover:underline">Ver estrategias</Link>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
                 </div>
               </div>
             </div>

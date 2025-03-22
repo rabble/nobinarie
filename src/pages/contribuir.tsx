@@ -24,7 +24,7 @@ export default function Contribuir() {
             <h3>Para contribuciones técnicas</h3>
             <ol>
               <li>Visitá nuestro <a href="https://github.com/rabble/nobinarie" target="_blank" rel="noopener noreferrer">repositorio en GitHub</a></li>
-              <li>Mirá los "issues" abiertos o creá uno nuevo si encontrás un problema o tenés una idea</li>
+              <li>Mirá los &quot;issues&quot; abiertos o creá uno nuevo si encontrás un problema o tenés una idea</li>
               <li>Forkeá el repositorio y creá un Pull Request con tus cambios</li>
               <li>Nuestro equipo revisará tu contribución y la integrará si cumple con los estándares del proyecto</li>
             </ol>

@@ -4,21 +4,22 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/generate-dictionary-zips.js",
     "build": "DISABLE_ESLINT_PLUGIN=true next build",
     "start": "next start",
-    "export": "next build && next export",
+    "export": "node scripts/generate-dictionary-zips.js && DISABLE_ESLINT_PLUGIN=true next build && next export",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:unit": "vitest run src/tests/unit",
     "test:integration": "vitest run src/tests/integration",
     "test:e2e": "playwright test",
-    "deploy:pages": "npm run build && npx wrangler pages deploy .next/static --project-name=nobinarie",
-    "deploy:pages:prod": "npm run build && npx wrangler pages deploy .next/static --project-name=nobinarie --branch=main --commit-dirty=true",
-    "deploy:pages:full": "npm run build && npx wrangler pages deploy .next --project-name=nobinarie",
-    "deploy:pages:full:prod": "npm run build && npx wrangler pages deploy .next --project-name=nobinarie --branch=main --commit-dirty=true"
+    "dictionary:generate": "node scripts/generate-dictionary-zips.js",
+    "deploy:pages": "npm run export && npx wrangler pages deploy out --project-name=nobinarie",
+    "deploy:pages:prod": "npm run export && npx wrangler pages deploy out --project-name=nobinarie --branch=main --commit-dirty=true"
   },
   "dependencies": {
+    "jszip": "^3.10.1",
     "next": "^13.4.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
