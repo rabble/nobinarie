@@ -1,0 +1,337 @@
+{
+  "dialectos": [
+    {
+      "code": "es-CL",
+      "name": "Chile",
+      "file": "es-CL_inclusive_aggressive_e.json",
+      "word_count": 51154,
+      "mode": "aggressive",
+      "marker": "e",
+      "description": "Diccionario con términos inclusivos en español para es-CL, usando -e como marcador"
+    },
+    {
+      "code": "es-BO",
+      "name": "Bolivia",
+      "file": "es-BO_inclusive_aggressive_e.json",
+      "word_count": 50887,
+      "mode": "aggressive",
+      "marker": "e",
+      "description": "Diccionario con términos inclusivos en español para es-BO, usando -e como marcador"
+    },
+    {
+      "code": "es-AR",
+      "name": "Argentina",
+      "file": "es-AR_inclusive_aggressive_x.json",
+      "word_count": 51851,
+      "mode": "aggressive",
+      "marker": "x",
+      "description": "Diccionario con términos inclusivos en español para es-AR, usando -x como marcador"
+    },
+    {
+      "code": "es-AR",
+      "name": "Argentina",
+      "file": "es-AR_inclusive_conservative_x.json",
+      "word_count": 82118,
+      "mode": "conservative",
+      "marker": "x",
+      "description": "Diccionario con términos inclusivos en español para es-AR, usando -x como marcador"
+    },
+    {
+      "code": "es-AR",
+      "name": "Argentina",
+      "file": "es-AR_inclusive_aggressive_e.json",
+      "word_count": 51353,
+      "mode": "aggressive",
+      "marker": "e",
+      "description": "Diccionario con términos inclusivos en español para es-AR, usando -e como marcador"
+    },
+    {
+      "code": "es-AR",
+      "name": "Argentina",
+      "file": "es-AR_inclusive_conservative_e.json",
+      "word_count": 81620,
+      "mode": "conservative",
+      "marker": "e",
+      "description": "Diccionario con términos inclusivos en español para es-AR, usando -e como marcador"
+    },
+    {
+      "code": "es-AR",
+      "name": "Argentina",
+      "file": "es-AR_inclusive_aggressive_@.json",
+      "word_count": 51853,
+      "mode": "aggressive",
+      "marker": "@",
+      "description": "Diccionario con términos inclusivos en español para es-AR, usando @ como marcador"
+    },
+    {
+      "code": "es-AR",
+      "name": "Argentina",
+      "file": "es-AR_inclusive_conservative_@.json",
+      "word_count": 82120,
+      "mode": "conservative",
+      "marker": "@",
+      "description": "Diccionario con términos inclusivos en español para es-AR, usando @ como marcador"
+    },
+    {
+      "code": "es-MX",
+      "name": "México",
+      "file": "es-MX_inclusive_aggressive_@.json",
+      "word_count": 53548,
+      "mode": "aggressive",
+      "marker": "@",
+      "description": "Diccionario con términos inclusivos en español para es-MX, usando @ como marcador"
+    },
+    {
+      "code": "es-MX",
+      "name": "México",
+      "file": "es-MX_inclusive_conservative_e.json",
+      "word_count": 84281,
+      "mode": "conservative",
+      "marker": "e",
+      "description": "Diccionario con términos inclusivos en español para es-MX, usando -e como marcador"
+    },
+    {
+      "code": "es-MX",
+      "name": "México",
+      "file": "es-MX_inclusive_aggressive_e.json",
+      "word_count": 53065,
+      "mode": "aggressive",
+      "marker": "e",
+      "description": "Diccionario con términos inclusivos en español para es-MX, usando -e como marcador"
+    },
+    {
+      "code": "es-MX",
+      "name": "México",
+      "file": "es-MX_inclusive_conservative_@.json",
+      "word_count": 84764,
+      "mode": "conservative",
+      "marker": "@",
+      "description": "Diccionario con términos inclusivos en español para es-MX, usando @ como marcador"
+    },
+    {
+      "code": "es-MX",
+      "name": "México",
+      "file": "es-MX_inclusive_conservative_x.json",
+      "word_count": 84761,
+      "mode": "conservative",
+      "marker": "x",
+      "description": "Diccionario con términos inclusivos en español para es-MX, usando -x como marcador"
+    },
+    {
+      "code": "es-MX",
+      "name": "México",
+      "file": "es-MX_inclusive_aggressive_x.json",
+      "word_count": 53545,
+      "mode": "aggressive",
+      "marker": "x",
+      "description": "Diccionario con términos inclusivos en español para es-MX, usando -x como marcador"
+    },
+    {
+      "code": "es-HN",
+      "name": "Honduras",
+      "file": "es-HN_inclusive_aggressive_e.json",
+      "word_count": 50815,
+      "mode": "aggressive",
+      "marker": "e",
+      "description": "Diccionario con términos inclusivos en español para es-HN, usando -e como marcador"
+    },
+    {
+      "code": "es-VE",
+      "name": "Venezuela",
+      "file": "es-VE_inclusive_aggressive_e.json",
+      "word_count": 51100,
+      "mode": "aggressive",
+      "marker": "e",
+      "description": "Diccionario con términos inclusivos en español para es-VE, usando -e como marcador"
+    },
+    {
+      "code": "es-PR",
+      "name": "Puerto Rico",
+      "file": "es-PR_inclusive_aggressive_e.json",
+      "word_count": 50608,
+      "mode": "aggressive",
+      "marker": "e",
+      "description": "Diccionario con términos inclusivos en español para es-PR, usando -e como marcador"
+    },
+    {
+      "code": "es-PH",
+      "name": "Filipinas",
+      "file": "es-PH_inclusive_aggressive_e.json",
+      "word_count": 61684,
+      "mode": "aggressive",
+      "marker": "e",
+      "description": "Diccionario con términos inclusivos en español para es-PH, usando -e como marcador"
+    },
+    {
+      "code": "es-UY",
+      "name": "Uruguay",
+      "file": "es-UY_inclusive_aggressive_e.json",
+      "word_count": 50799,
+      "mode": "aggressive",
+      "marker": "e",
+      "description": "Diccionario con términos inclusivos en español para es-UY, usando -e como marcador"
+    },
+    {
+      "code": "es-PA",
+      "name": "Panamá",
+      "file": "es-PA_inclusive_aggressive_e.json",
+      "word_count": 50652,
+      "mode": "aggressive",
+      "marker": "e",
+      "description": "Diccionario con términos inclusivos en español para es-PA, usando -e como marcador"
+    },
+    {
+      "code": "es-CR",
+      "name": "Costa Rica",
+      "file": "es-CR_inclusive_aggressive_e.json",
+      "word_count": 50701,
+      "mode": "aggressive",
+      "marker": "e",
+      "description": "Diccionario con términos inclusivos en español para es-CR, usando -e como marcador"
+    },
+    {
+      "code": "es-CU",
+      "name": "Cuba",
+      "file": "es-CU_inclusive_aggressive_e.json",
+      "word_count": 50873,
+      "mode": "aggressive",
+      "marker": "e",
+      "description": "Diccionario con términos inclusivos en español para es-CU, usando -e como marcador"
+    },
+    {
+      "code": "es-CO",
+      "name": "Colombia",
+      "file": "es-CO_inclusive_aggressive_e.json",
+      "word_count": 56196,
+      "mode": "aggressive",
+      "marker": "e",
+      "description": "Diccionario con términos inclusivos en español para es-CO, usando -e como marcador"
+    },
+    {
+      "code": "es-EC",
+      "name": "Ecuador",
+      "file": "es-EC_inclusive_aggressive_e.json",
+      "word_count": 50739,
+      "mode": "aggressive",
+      "marker": "e",
+      "description": "Diccionario con términos inclusivos en español para es-EC, usando -e como marcador"
+    },
+    {
+      "code": "es",
+      "name": "Español (General)",
+      "file": "es_inclusive_conservative_x.json",
+      "word_count": 83367,
+      "mode": "conservative",
+      "marker": "x",
+      "description": "Diccionario con términos inclusivos en español para es, usando -x como marcador"
+    },
+    {
+      "code": "es",
+      "name": "Español (General)",
+      "file": "es_inclusive_aggressive_x.json",
+      "word_count": 52605,
+      "mode": "aggressive",
+      "marker": "x",
+      "description": "Diccionario con términos inclusivos en español para es, usando -x como marcador"
+    },
+    {
+      "code": "es",
+      "name": "Español (General)",
+      "file": "es_inclusive_conservative_e.json",
+      "word_count": 82866,
+      "mode": "conservative",
+      "marker": "e",
+      "description": "Diccionario con términos inclusivos en español para es, usando -e como marcador"
+    },
+    {
+      "code": "es",
+      "name": "Español (General)",
+      "file": "es_inclusive_aggressive_@.json",
+      "word_count": 52607,
+      "mode": "aggressive",
+      "marker": "@",
+      "description": "Diccionario con términos inclusivos en español para es, usando @ como marcador"
+    },
+    {
+      "code": "es",
+      "name": "Español (General)",
+      "file": "es_inclusive_conservative_@.json",
+      "word_count": 83369,
+      "mode": "conservative",
+      "marker": "@",
+      "description": "Diccionario con términos inclusivos en español para es, usando @ como marcador"
+    },
+    {
+      "code": "es",
+      "name": "Español (General)",
+      "file": "es_inclusive_aggressive_e.json",
+      "word_count": 52104,
+      "mode": "aggressive",
+      "marker": "e",
+      "description": "Diccionario con términos inclusivos en español para es, usando -e como marcador"
+    },
+    {
+      "code": "es-GT",
+      "name": "Guatemala",
+      "file": "es-GT_inclusive_aggressive_e.json",
+      "word_count": 50678,
+      "mode": "aggressive",
+      "marker": "e",
+      "description": "Diccionario con términos inclusivos en español para es-GT, usando -e como marcador"
+    },
+    {
+      "code": "es-NI",
+      "name": "Nicaragua",
+      "file": "es-NI_inclusive_aggressive_e.json",
+      "word_count": 50731,
+      "mode": "aggressive",
+      "marker": "e",
+      "description": "Diccionario con términos inclusivos en español para es-NI, usando -e como marcador"
+    },
+    {
+      "code": "es-DO",
+      "name": "República Dominicana",
+      "file": "es-DO_inclusive_aggressive_e.json",
+      "word_count": 50605,
+      "mode": "aggressive",
+      "marker": "e",
+      "description": "Diccionario con términos inclusivos en español para es-DO, usando -e como marcador"
+    },
+    {
+      "code": "es-PE",
+      "name": "Perú",
+      "file": "es-PE_inclusive_aggressive_e.json",
+      "word_count": 52433,
+      "mode": "aggressive",
+      "marker": "e",
+      "description": "Diccionario con términos inclusivos en español para es-PE, usando -e como marcador"
+    },
+    {
+      "code": "es-US",
+      "name": "Estados Unidos",
+      "file": "es-US_inclusive_aggressive_e.json",
+      "word_count": 50366,
+      "mode": "aggressive",
+      "marker": "e",
+      "description": "Diccionario con términos inclusivos en español para es-US, usando -e como marcador"
+    },
+    {
+      "code": "es-SV",
+      "name": "El Salvador",
+      "file": "es-SV_inclusive_aggressive_e.json",
+      "word_count": 50688,
+      "mode": "aggressive",
+      "marker": "e",
+      "description": "Diccionario con términos inclusivos en español para es-SV, usando -e como marcador"
+    },
+    {
+      "code": "es-PY",
+      "name": "Paraguay",
+      "file": "es-PY_inclusive_aggressive_e.json",
+      "word_count": 50660,
+      "mode": "aggressive",
+      "marker": "e",
+      "description": "Diccionario con términos inclusivos en español para es-PY, usando -e como marcador"
+    }
+  ]
+}

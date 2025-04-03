@@ -24,7 +24,7 @@ export const Header: React.FC = () => {
   };
 
   return (
-    <header className="bg-gradient-to-r from-nonbinary-yellow via-nonbinary-purple to-nonbinary-purple dark:from-gray-900 dark:via-gray-900 dark:to-gray-800 shadow-md relative overflow-hidden" role="banner">
+    <header className="bg-white dark:bg-gray-900 shadow-md relative overflow-hidden" role="banner">
       {/* Rainbow top border */}
       <div className="h-1 w-full bg-rainbow-gradient absolute top-0 left-0 right-0"></div>
       
@@ -43,7 +43,7 @@ export const Header: React.FC = () => {
             <div className="flex-shrink-0 flex items-center">
               <Link 
                 href="/" 
-                className="text-2xl font-bold bg-clip-text text-transparent bg-rainbow-gradient bg-300% animate-rainbow-text"
+                className="text-2xl font-bold text-gray-900 dark:text-white hover:text-rainbow-blue transition-colors"
               >
                 nobinarie
               </Link>

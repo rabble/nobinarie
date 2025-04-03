@@ -1,0 +1,9 @@
+# Core dependencies
+PyYAML>=6.0
+regex>=2022.1.18
+
+# For development and testing
+pytest>=7.0.0
+black>=22.1.0
+flake8>=4.0.1
+mypy>=0.931

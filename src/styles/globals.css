@@ -56,11 +56,36 @@
 
   /* Buttons */
   .btn-primary {
-    @apply inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-rainbow-gradient bg-300% hover:bg-left-animation focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rainbow-blue transition-all;
+    @apply inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-md text-white transition-all relative overflow-hidden;
+    background: linear-gradient(90deg, var(--rainbow-blue), var(--rainbow-purple));
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15), 0 0 0 rgba(25, 130, 196, 0);
+  }
+  
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2), 0 0 15px rgba(25, 130, 196, 0.5);
+    background: linear-gradient(90deg, var(--rainbow-purple), var(--rainbow-blue));
+  }
+  
+  .btn-primary:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 
   .btn-secondary {
-    @apply inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-rainbow-blue bg-rainbow-blue/10 hover:bg-rainbow-blue/20 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rainbow-blue transition-all;
+    @apply inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md transition-all;
+    background-color: white;
+    color: var(--rainbow-blue);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+  }
+  
+  .btn-secondary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    background-color: rgba(25, 130, 196, 0.05);
+    color: var(--rainbow-purple);
   }
 
   /* Lead paragraph */
@@ -95,9 +120,7 @@
     animation: pulse 3s ease-in-out infinite;
   }
 
-  .hover\:bg-left-animation:hover {
-    animation: bg-left 2s forwards;
-  }
+  /* This class has been moved to the btn-primary:hover rule in the components layer */
 
   /* Text gradient */
   .text-rainbow-gradient-hover:hover {
@@ -138,6 +161,9 @@
 @keyframes bg-left {
   0% {
     background-position: right;
+  }
+  50% {
+    background-position: center;
   }
   100% {
     background-position: left;
