@@ -1,0 +1,28 @@
+{
+  "name": "Español Inclusivo (Reemplazo, -e)",
+  "version": "1.0.0",
+  "description": "Diccionario con términos inclusivos en español, usando -e como marcador",
+  "words": [
+    "algunes",
+    "alumne",
+    "alumnes",
+    "amige",
+    "amiges",
+    "doctore",
+    "doctores",
+    "hermane",
+    "hermanes",
+    "ingeniere",
+    "ingenieres",
+    "muches",
+    "ningune",
+    "poces",
+    "profesore",
+    "profesores",
+    "todes",
+    "trabajadore",
+    "trabajadores",
+    "une",
+    "varies"
+  ]
+}

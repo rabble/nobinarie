@@ -5,7 +5,11 @@
 This document outlines the product plan for developing Python scripts (`conversor_inclusivo.py` and associated library) to convert standard Spanish dictionaries into inclusive language versions, guided by `README.md` and the detailed linguistic analysis in `docs/research.md`.
 
 **Primary Goals:**
-*   Deliver a functional command-line tool for dictionary conversion focused on Rioplatense Spanish `-e` forms.
+*   Deliver a functional command-line tool that transforms existing Spanish dictionaries with multiple inclusivity approaches:
+    - An "aggressive" version that replaces gendered endings (primarily with `-e` forms)
+    - A "conservative" version that adds inclusive forms alongside original words
+    - Alternative versions using `-x` and `-@` as neutral markers
+*   Work with established Spanish dictionary sources (users provide their own dictionary files)
 *   Provide a reusable, configurable Python library.
 *   Implement robust morphological transformation rules based on linguistic research.
 *   Handle orthographic changes (tildes) correctly.
@@ -20,7 +24,16 @@ This document outlines the product plan for developing Python scripts (`converso
 
 ## 3. Scope
 
-### 3.1. Phase 1: Core Engine & Basic Formats
+### 3.1. Source Dictionaries
+
+*   The converter is designed to work with established Spanish dictionary sources.
+*   Users must provide their own source dictionary files.
+*   The system does NOT attempt to create a comprehensive Spanish dictionary from scratch.
+*   Sample dictionaries are provided only for testing and demonstration purposes.
+*   Supported input formats include Hunspell (.dic), plaintext word lists, and JSON.
+*   Sources might include: Spanish Hunspell dictionaries from Mozilla/LibreOffice, academic dictionaries, or custom word lists.
+
+### 3.2. Phase 1: Core Engine & Basic Formats
 
 *   **Core Logic:** `ConversorInclusivo` class structure.
 *   **Transformation Rules:** Implement basic vowel endings (`-o/a/os/as -> -e/es`) and core complex suffixes (`-or/ora -> -ore`, `-dor/dora -> -dore`).
@@ -46,12 +59,15 @@ This document outlines the product plan for developing Python scripts (`converso
 *   **Testing:** Integration tests for CLI, advanced rules, orthography, all formats.
 *   **Documentation:** User guide for CLI, library, configuration files.
 
-### 3.3. Phase 3: Grammatical Categories, Hunspell .aff & Broader Formats
+### 3.3. Phase 3: Multiple Dictionary Variants, Grammatical Categories & Broader Formats
 
+*   **Multiple Dictionary Variants:**
+    - Implement "aggressive" mode that replaces gendered forms with inclusive alternatives
+    - Implement "conservative" mode that adds inclusive forms while preserving originals
+    - Generate separate dictionaries for different neutral markers (`-e`, `-x`, `-@`)
 *   **Grammatical Categories:** Implement generation of inclusive forms for articles, determiners, pronouns, quantifiers (as defined in PDR 2.8). *Requires careful design regarding integration into dictionary formats.*
 *   **Hunspell `.aff` Generation:** Implement optional generation/modification of `.aff` rules to support inclusive forms via flags (PDR Section 7). This is a complex task and may be a separate sub-project.
 *   **Format Support:** Add support for XML (LanguageTool) and SQLite formats.
-*   **Alternative Endings:** Explore configurable support for `-x` / `@` endings based on `research.md`.
 *   **Packaging:** Package the library for distribution via PyPI.
 *   **Performance Optimization:** Profile and optimize for very large dictionaries.
 *   **Evaluation:** Implement methods or scripts for basic quality evaluation (e.g., comparing against a known inclusive corpus, checking for conflicts).
@@ -103,8 +119,10 @@ This document outlines the product plan for developing Python scripts (`converso
 
 *   All Phase 1 Milestones completed.
 *   Core conversion logic for implemented `-e` rules functions correctly for Hunspell (.dic) and Plaintext.
+*   Successfully transforms sample/test dictionaries and handles a variety of input sources provided by users.
 *   Basic orthography handling for simple cases is functional.
 *   Exceptions and basic exclusions are handled via lists.
 *   Basic CLI tool is usable.
+*   Clear instructions on how to obtain and use source dictionaries.
 *   Unit tests pass.
 *   Basic documentation exists.

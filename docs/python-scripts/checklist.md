@@ -2,6 +2,8 @@
 
 ## Phase 0: Setup & Design
 
+> Note: This system is designed to transform existing Spanish dictionaries into inclusive versions. Users must provide their own source dictionaries in supported formats. The system does not create a comprehensive Spanish dictionary from scratch.
+
 *   [x] Define Product Design Requirements (PDR) incorporating `research.md`
 *   [x] Define Product Plan incorporating `research.md`
 *   [x] Create Development Checklist incorporating `research.md`
@@ -90,6 +92,8 @@
 *   [ ] Add `--stats` option and implement statistics collection.
 *   [ ] Add `--verbose` option.
 *   [ ] Add options for all custom config files (`--rules`, `--exceptions`, `--invariables`, `--exclusions`, `--neologisms`).
+*   [ ] Add `--mode=aggressive|conservative` option.
+*   [ ] Add `--marker=e|x|@` option.
 *   [ ] Improve error reporting.
 
 ### Library Enhancements
@@ -102,20 +106,34 @@
 *   [ ] Expand documentation: user guide, configuration file format, rule definition.
 *   [ ] Add examples.
 
-## Phase 3: Grammatical Categories, Hunspell .aff & Broader Formats
+## Phase 3: Multiple Dictionary Variants, Grammatical Categories & Broader Formats
 
+### Multiple Dictionary Variants
+*   [ ] Implement "aggressive" mode (replacement of gendered forms).
+*   [ ] Implement "conservative" mode (addition of inclusive forms).
+*   [ ] Implement `-e` marker handling (primary approach).
+*   [ ] Implement `-x` marker handling (alternative approach).
+*   [ ] Implement `-@` marker handling (alternative approach).
+*   [ ] Add command-line flags for mode and marker selection.
+*   [ ] Create dictionary naming conventions for different variants.
+*   [ ] Implement batch generation of all dictionary variants.
+
+### Grammatical Categories
 *   [ ] Implement generation of inclusive forms for Articles (`le`, `les`).
 *   [ ] Implement generation of inclusive forms for Demonstratives (`este`, `ese`, etc.).
 *   [ ] Implement generation of inclusive forms for Determiners (`une`, `algune`, etc.).
 *   [ ] Implement generation of inclusive forms for Pronouns (`elle`, `elles`, `suye`?).
 *   [ ] Implement generation of inclusive forms for Quantifiers/Numerals (`todes`, `une`, `primere`).
 *   [ ] Design integration strategy for grammatical forms into dictionary formats.
+
+### Hunspell & Broader Formats
 *   [ ] **(Optional/Complex)** Design `.aff` rule generation strategy.
 *   [ ] **(Optional/Complex)** Implement `.aff` file parser/writer.
 *   [ ] **(Optional/Complex)** Implement logic to generate `.aff` rules for inclusive forms.
 *   [ ] Implement XML (LanguageTool) input/output handler.
 *   [ ] Implement SQLite input/output handler.
-*   [ ] Explore configurable support for `-x` / `@` endings.
+
+### Finalization
 *   [ ] Set up packaging (`setup.py` / `pyproject.toml`) for PyPI.
 *   [ ] Profile performance and optimize if needed.
 *   [ ] Implement basic dictionary quality evaluation scripts/methods.
